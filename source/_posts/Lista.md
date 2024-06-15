@@ -1,11 +1,6 @@
 ---
 title: Lista
 date: 2024-06-15
-tags:
-  - interpolação
-  - Lagrange
-  - Newton
-  - ajuste de curvas
 ---
 
 ## Introdução a Lista
