@@ -37,20 +37,6 @@
     
     
     
-    <tags>
-      
-      <tag>interpolação</tag>
-      
-      <tag>métodos numéricos</tag>
-      
-      <tag>matemática</tag>
-      
-      <tag>polinômios</tag>
-      
-      <tag>lagrange</tag>
-      
-    </tags>
-    
   </entry>
   
   
@@ -64,20 +50,6 @@
     
     
     
-    <tags>
-      
-      <tag>interpolação</tag>
-      
-      <tag>métodos numéricos</tag>
-      
-      <tag>matemática</tag>
-      
-      <tag>polinômios</tag>
-      
-      <tag>newton</tag>
-      
-    </tags>
-    
   </entry>
   
   
@@ -90,18 +62,6 @@
     <content type="html"><![CDATA[<h3 id="Introducao-a-Interpolacao-Linear"><a href="#Introducao-a-Interpolacao-Linear" class="headerlink" title="Introdução à Interpolação Linear"></a>Introdução à Interpolação Linear</h3><p>A interpolação linear é uma técnica matemática utilizada para estimar valores desconhecidos que se encontram dentro do intervalo de dois pontos conhecidos. Em muitas aplicações práticas, temos um conjunto de dados discretos e precisamos prever ou estimar valores entre esses pontos. A interpolação linear é a forma mais simples de interpolação, e envolve a construção de uma reta que conecta dois pontos dados.</p><h3 id="Objetivo-do-Codigo"><a href="#Objetivo-do-Codigo" class="headerlink" title="Objetivo do Código"></a>Objetivo do Código</h3><p>O código desenvolvido para a primeira atividade prática tem como objetivo realizar a interpolação linear entre dois pontos fornecidos pelo usuário. Ele calcula a equação da reta que passa por esses pontos, encontrando os dois coeficientes angulares, a1 e a0, que definem essa reta. A equação da reta é então usada para prever valores intermediários entre os dois pontos.<br>Abaixo está o código completo seguido de uma explicação detalhada de suas funções:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">coef_angular1</span>(<span class="hljs-params">x0, y0, x1, y1</span>):<br>    <span class="hljs-keyword">return</span> (y1 - y0) / (x1 - x0)<br><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">coef_angular0</span>(<span class="hljs-params">a1, x0, y0</span>):<br>    <span class="hljs-keyword">return</span> y0 - a1 * x0<br><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">pontos</span>():<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Insira os valores dos pontos para realizar a interpolação linear.&quot;</span>)<br>    <br>    x0 = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Digite o valor de x0: &quot;</span>))<br>    y0 = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Digite o valor de y0: &quot;</span>))<br>    <br>    x1 = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Digite o valor de x1: &quot;</span>))<br>    y1 = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Digite o valor de y1: &quot;</span>))<br>    <br>    <span class="hljs-keyword">return</span> x0, y0, x1, y1<br><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">main</span>():<br>    x0, y0, x1, y1 = pontos()<br><br>    a1 = coef_angular1(x0, y0, x1, y1)<br>    a0 = coef_angular0(a1, x0, y0)<br><br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;Coeficiente a1 = <span class="hljs-subst">&#123;a1:<span class="hljs-number">.3</span>f&#125;</span>&quot;</span>)<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;Coeficiente a0 = <span class="hljs-subst">&#123;a0:<span class="hljs-number">.3</span>f&#125;</span>&quot;</span>)<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;P(x) = <span class="hljs-subst">&#123;a0:<span class="hljs-number">.3</span>f&#125;</span> + <span class="hljs-subst">&#123;a1:<span class="hljs-number">.3</span>f&#125;</span>x&quot;</span>)<br><br><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&quot;__main__&quot;</span>:<br>    main()<br><br><span class="hljs-comment"># Pontos específicos da aula para teste</span><br><span class="hljs-comment"># x0, y0 = 0.1, 1.221 ; x1, y1 = 0.6, 3.320</span><br></code></pre></td></tr></table></figure><h3 id="Explicando-o-codigo-desenvolvido"><a href="#Explicando-o-codigo-desenvolvido" class="headerlink" title="Explicando o código desenvolvido"></a>Explicando o código desenvolvido</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">coef_angular1</span>(<span class="hljs-params">x0, y0, x1, y1</span>):<br>    <span class="hljs-keyword">return</span> (y1 - y0) / (x1 - x0)<br></code></pre></td></tr></table></figure><p>Esta função calcula o coeficiente angular a1, que é a inclinação da reta que conecta os dois pontos (x0,y0) e (x1,y1). A inclinação é dada pela razão entre a diferença nas coordenadas y e a diferença nas coordenadas x, sendo:  a1 &#x3D; (y1-y0) &#x2F; (x1-x0)</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">coef_angular0</span>(<span class="hljs-params">a1, x0, y0</span>):<br>    <span class="hljs-keyword">return</span> y0 - a1 * x0<br></code></pre></td></tr></table></figure><p>Esta função calcula o coeficiente linear a0, que é o ponto onde a reta intercepta o eixo y. Este coeficiente é calculado rearranjando a equação da reta y &#x3D; a1 * x + a0 para resolver a0, sendo: a0 &#x3D; y0 - a1 * x0</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">pontos</span>():<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Insira os valores dos pontos para realizar a interpolação linear.&quot;</span>)<br>    <br>    x0 = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Digite o valor de x0: &quot;</span>))<br>    y0 = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Digite o valor de y0: &quot;</span>))<br>    <br>    x1 = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Digite o valor de x1: &quot;</span>))<br>    y1 = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Digite o valor de y1: &quot;</span>))<br>    <br>    <span class="hljs-keyword">return</span> x0, y0, x1, y1<br></code></pre></td></tr></table></figure><p>Esta função solicita ao usuário que insira os valores dos dois pontos necessários para a interpolação linear. Os valores são lidos como entradas do usuário e convertidos para o tipo ‘float’ para garantir precisão decimal. A função retorna os valores dos pontos x0,y0 e x1,y1.</p><p>Após passar por todos esses processos, o código chama a função ‘pontos’ para obter os valores dos pontos fornecidos pelo usuário, calcula os coeficientes a1 e a0 usando as funções ‘coef_angular1’ e ‘coef_angular0’. Por final, imprime os coeficientes e a equação da reta resultante no formato P(X) &#x3D; a0 + a1 * x.</p><p>Para mais informações, este é o meu GitHub com os dados corretos:<br><a href="https://github.com/nickapmello/portfolio">GitHub Nicolas Mello - Portfólio Calculo Numerico</a>.</p>]]></content>
     
     
-    
-    <tags>
-      
-      <tag>interpolação</tag>
-      
-      <tag>métodos numéricos</tag>
-      
-      <tag>matemática</tag>
-      
-      <tag>polinômios</tag>
-      
-    </tags>
     
   </entry>
   
