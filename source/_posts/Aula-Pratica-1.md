@@ -83,5 +83,5 @@ Após passar por todos esses processos, o código chama a função 'pontos' para
 
 
 Para mais informações, este é o meu GitHub com os dados corretos:
-[GitHub Nicolas Mello - Portfólio Calculo Numerico](https://github.com/nickapmello/PortfolioCN).
+[GitHub Nicolas Mello - Portfólio Calculo Numerico](https://github.com/nickapmello/portfolio).
 

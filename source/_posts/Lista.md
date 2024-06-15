@@ -138,4 +138,4 @@ Os resultados para o exercício 1 são exatamente iguais. Para o exercício 2 s�
 
 
 Para mais informações, este é o meu GitHub com os dados corretos:
-[GitHub Nicolas Mello - Portfólio Calculo Numerico](https://github.com/nickapmello/PortfolioCN).
+[GitHub Nicolas Mello - Portfólio Calculo Numerico](https://github.com/nickapmello/portfolio).
