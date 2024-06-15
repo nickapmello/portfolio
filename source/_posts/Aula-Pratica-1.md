@@ -1,11 +1,6 @@
 ---
 title: Aula Prática 1
 date: 2024-05-29
-tags:
-  - interpolação
-  - métodos numéricos
-  - matemática
-  - polinômios
 ---
 
 ### Introdução à Interpolação Linear

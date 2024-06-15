@@ -1,12 +1,6 @@
 ---
 title: Aula Prática 3
 date: 2024-06-03
-tags:
-  - interpolação
-  - métodos numéricos
-  - matemática
-  - polinômios
-  - lagrange
 ---
 
 ### Introdução à Interpolação Polinomial de Lagrange

@@ -1,12 +1,6 @@
 ---
 title: Aula Prática 2
 date: 2024-06-01
-tags:
-  - interpolação
-  - métodos numéricos
-  - matemática
-  - polinômios
-  - newton
 ---
 
 ### Introdução à Interpolação Polinomial de Newton
