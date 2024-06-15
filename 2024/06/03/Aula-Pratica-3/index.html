@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
-  <meta name="theme-color" content="#2f4154">
+  <meta name="theme-color" content="#007bff">
   <meta name="author" content="Nicolas Mello">
   <meta name="keywords" content="cálculo numérico,interpolação polinomial,ajuste de curvas,métodos numéricos,Lagrange,Newton,polinômios">
   
@@ -20,11 +20,11 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Aula Prática 3">
 <meta property="og:url" content="https://nickapmello.github.io/portfolio/2024/06/03/Aula-Pratica-3/index.html">
-<meta property="og:site_name" content="Portfolio Calculo Numerico">
+<meta property="og:site_name" content="Nicolas Mello Portfolio">
 <meta property="og:description" content="Introdução à Interpolação Polinomial de LagrangeA interpolação de Lagrange é uma técnica matemática utilizada para estimar valores desconhecidos dentro do intervalo de um conjunto de pontos conhecidos">
 <meta property="og:locale" content="pt_BR">
 <meta property="article:published_time" content="2024-06-03T03:00:00.000Z">
-<meta property="article:modified_time" content="2024-06-15T06:23:14.080Z">
+<meta property="article:modified_time" content="2024-06-15T06:56:49.737Z">
 <meta property="article:author" content="Nicolas Mello">
 <meta property="article:tag" content="interpolação">
 <meta property="article:tag" content="métodos numéricos">
@@ -35,7 +35,7 @@
   
   
   
-  <title>Aula Prática 3 - Portfolio Calculo Numerico</title>
+  <title>Aula Prática 3 - Nicolas Mello Portfolio</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -73,7 +73,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"nickapmello.github.io","root":"/portfolio/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/portfolio/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"nickapmello.github.io","root":"/portfolio/","version":"1.9.7","typing":{"enable":true,"typeSpeed":50,"cursorChar":"|","loop":true},"anchorjs":{"enable":true,"placement":"right","visible":"always"},"progressbar":{"enable":true,"color":"#29d","options":{"showSpinner":true,"trickleSpeed":150}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/portfolio/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -119,7 +119,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/portfolio/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
-                <span>Home</span>
+                <span>Startseite</span>
               </a>
             </li>
           
@@ -131,7 +131,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/portfolio/archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
-                <span>Archives</span>
+                <span>Archiv</span>
               </a>
             </li>
           
@@ -143,7 +143,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/portfolio/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
-                <span>Categories</span>
+                <span>categories</span>
               </a>
             </li>
           
@@ -155,7 +155,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/portfolio/tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
-                <span>Tags</span>
+                <span>tags</span>
               </a>
             </li>
           
@@ -167,7 +167,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/portfolio/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
-                <span>About</span>
+                <span>Über</span>
               </a>
             </li>
           
@@ -195,7 +195,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/portfolio/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('/portfolio/img/beach.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -224,7 +224,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          320 words
+          320 wörter
         
       </span>
     
@@ -235,7 +235,7 @@
         
         
         
-          3 mins
+          3 minuten
         
       </span>
     
@@ -289,7 +289,7 @@
 <p>Esta função solicita ao usuário que insira a quantidade de pontos e os valores ‘x’ e ‘y’ correspondentes para cada ponto. Os valores são convertidos para ‘float’ para garantir precisão decimal e armazenados em listas.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">valor_final</span>():<br>    pontos_x, pontos_y = solicitar_pontos()<br>    x_interpolar = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Digite o valor de x para interpolação: &quot;</span>))<br>    resultado = calc_poli_lagrange(pontos_x, pontos_y, x_interpolar)<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;O valor interpolado em x = <span class="hljs-subst">&#123;x_interpolar&#125;</span> é <span class="hljs-subst">&#123;resultado&#125;</span>&quot;</span>)<br><br><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&quot;__valor_final__&quot;</span>:<br>    valor_final()<br></code></pre></td></tr></table></figure>
 <p>A função ‘main’ finaliza o código, onde ela chama a função ‘solicitar_pontos’ para obter os pontos fornecidos pelo usuário, também solicita o valor de ‘x’ onde a interpolação deve ser calculada e, em seguida, calcula o valor interpolado usando a função ‘calc_poli_lagrange’.</p>
-<p>Para mais informações, este é o meu GitHub com os dados corretos:<br><a target="_blank" rel="noopener" href="https://github.com/nickapmello/PortfolioCN">GitHub Nicolas Mello - Portfólio Calculo Numerico</a>.</p>
+<p>Para mais informações, este é o meu GitHub com os dados corretos:<br><a target="_blank" rel="noopener" href="https://github.com/nickapmello/portfolio">GitHub Nicolas Mello - Portfólio Calculo Numerico</a>.</p>
 
                 
               </div>
@@ -328,20 +328,20 @@
     <div class="license-meta">
       
         <div class="license-meta-item">
-          <div>Author</div>
+          <div>Beitragsautor</div>
           <div>Nicolas Mello</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
-          <div>Posted on</div>
+          <div>Veröffentlicht am</div>
           <div>3 de junho de 2024</div>
         </div>
       
       
       
         <div class="license-meta-item">
-          <div>Licensed under</div>
+          <div>Urheberrechtshinweis</div>
           <div>
             
               
@@ -370,7 +370,7 @@
                       <a href="/portfolio/2024/06/15/Lista/" title="Lista">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">Lista</span>
-                        <span class="visible-mobile">Previous</span>
+                        <span class="visible-mobile">Vorheriger</span>
                       </a>
                     
                   </article>
@@ -379,7 +379,7 @@
                     
                       <a href="/portfolio/2024/06/01/Aula-Pratica-2/" title="Aula Prática 2">
                         <span class="hidden-mobile">Aula Prática 2</span>
-                        <span class="visible-mobile">Next</span>
+                        <span class="visible-mobile">Nächster</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
                     
@@ -400,7 +400,7 @@
     <div id="toc">
   <p class="toc-header">
     <i class="iconfont icon-list"></i>
-    <span>Table of Contents</span>
+    <span>Inhaltsverzeichnis</span>
   </p>
   <div class="toc-body" id="toc-body"></div>
 </div>
@@ -456,7 +456,7 @@
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <h4 class="modal-title w-100 font-weight-bold">Suchen</h4>
         <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -464,7 +464,7 @@
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+          <label data-error="x" data-success="v" for="local-search-input">Stichwort</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
@@ -497,7 +497,7 @@
   <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
 
   <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.configure({"showSpinner":true,"trickleSpeed":150})
     NProgress.start()
     window.addEventListener('load', function() {
       NProgress.done();
@@ -643,7 +643,7 @@
   
 
   <noscript>
-    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+    <div class="noscript-warning">Blog funktioniert am besten mit aktiviertem JavaScript</div>
   </noscript>
 </body>
 </html>
