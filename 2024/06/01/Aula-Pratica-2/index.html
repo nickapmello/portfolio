@@ -24,7 +24,7 @@
 <meta property="og:description" content="Introdução à Interpolação Polinomial de NewtonA interpolação polinomial de Newton é uma técnica matemática utilizada para estimar valores desconhecidos que se encontram dentro do intervalo de um conju">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-06-01T03:00:00.000Z">
-<meta property="article:modified_time" content="2024-06-15T07:27:08.105Z">
+<meta property="article:modified_time" content="2024-06-15T07:51:12.793Z">
 <meta property="article:author" content="Nicolas Mello">
 <meta property="article:tag" content="cálculo numérico">
 <meta property="article:tag" content="interpolação polinomial">
@@ -267,7 +267,7 @@
 <p>A função ‘interpolacao’ coordena o cálculo dos coeficientes e a avaliação do polinômio. Ela primeiro calcula os coeficientes do polinômio interpolador usando a função ‘polinomio’ e, em seguida, avalia o polinômio no valor desejado usando a função ‘calc_polinomio’.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python">x_pontos = [<span class="hljs-number">1</span>, <span class="hljs-number">2.4</span>, <span class="hljs-number">3</span>, <span class="hljs-number">3.7</span>, <span class="hljs-number">5</span>]<br>y_pontos = [<span class="hljs-number">0.6</span>, <span class="hljs-number">1.3</span>, <span class="hljs-number">1.6</span>, <span class="hljs-number">1.9</span>, <span class="hljs-number">1.2</span>]<br><br>valor_a_interpolar = <span class="hljs-number">4</span><br><br>valor_interpolado = interpolacao(x_pontos, y_pontos, valor_a_interpolar)<br><span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;O valor interpolado em x = <span class="hljs-subst">&#123;valor_a_interpolar&#125;</span> é <span class="hljs-subst">&#123;valor_interpolado:<span class="hljs-number">.4</span>f&#125;</span>&quot;</span>)<br></code></pre></td></tr></table></figure>
 <p>Este é o final do código, onde são listados 5 específicos valores para os pontos de ‘x’ e para os pontos de ‘y’ e o valor de ‘x’ no qual queremos interpolar de um valor estimado para obter o valor final de ‘y’. Por tanto, o código executa a interpolação para o valor de x especificado ‘valor_a_interpolar’, calculando o valor correspondente de y usando o polinômio interpolador de Newton construído a partir dos pontos fornecidos.</p>
-<p>Para mais informações, este é o meu GitHub com os dados corretos:<br><a target="_blank" rel="noopener" href="https://github.com/nickapmello/portfolio">GitHub Nicolas Mello - Portfólio Calculo Numerico</a>.</p>
+<p>Para mais informações, este é o meu GitHub com os dados corretos:<br><a target="_blank" rel="noopener" href="https://github.com/nickapmello/portfolio">GitHub - Portfólio Calculo Numerico</a>.</p>
 
                 
               </div>
