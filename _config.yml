@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Portfolio Calculo Numerico
-subtitle: 'Métodos numéricos para ajuste de curvas'
+title: Nicolas Mello Portfolio
+subtitle: 'Portfolio de Calculo Numerico e Métodos numéricos para ajuste de curvas'
 description: 'Este portfólio apresenta as atividades, tarefas e implementações realizadas no âmbito da disciplina de Cálculo Numérico, com foco em métodos numéricos para ajuste de curvas. Inclui explicações detalhadas dos códigos desenvolvidos, interfaces de programação, e exemplos práticos de interpolação e regressão. Este portfólio serve como uma ferramenta de estudo e referência para compreender e aplicar técnicas numéricas em diversos contextos.'
 keywords:
   - cálculo numérico
