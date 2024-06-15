@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Lista | Portfolio Calculo Numerico</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Introdução a ListaNa seguinte lista de exercícios, foi proposta a ideia de utilizar os códigos que desenvolvemos em aula para apresentar a solução dos três seguintes exercícios de interpolação. Para c">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Lista">
+<meta property="og:url" content="https://nickapmello.github.io/portfolio/2024/06/15/Lista/index.html">
+<meta property="og:site_name" content="Portfolio Calculo Numerico">
+<meta property="og:description" content="Introdução a ListaNa seguinte lista de exercícios, foi proposta a ideia de utilizar os códigos que desenvolvemos em aula para apresentar a solução dos três seguintes exercícios de interpolação. Para c">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:image" content="https://nickapmello.github.io/portfolio/images/exercicio1.png">
+<meta property="og:image" content="https://nickapmello.github.io/portfolio/images/print1-newton.png">
+<meta property="og:image" content="https://nickapmello.github.io/portfolio/images/print1-lagrange.png">
+<meta property="og:image" content="https://nickapmello.github.io/portfolio/images/exercicio2.png">
+<meta property="og:image" content="https://nickapmello.github.io/portfolio/images/print2-newton.png">
+<meta property="og:image" content="https://nickapmello.github.io/portfolio/images/print2-lagrange.png">
+<meta property="og:image" content="https://nickapmello.github.io/portfolio/images/exercicio3.png">
+<meta property="og:image" content="https://nickapmello.github.io/portfolio/images/print3-newton.png">
+<meta property="og:image" content="https://nickapmello.github.io/portfolio/images/print3-lagrange.png">
+<meta property="article:published_time" content="2024-06-15T03:00:00.000Z">
+<meta property="article:modified_time" content="2024-06-15T06:27:40.572Z">
+<meta property="article:author" content="Nicolas Mello">
+<meta property="article:tag" content="interpolação">
+<meta property="article:tag" content="Lagrange">
+<meta property="article:tag" content="Newton">
+<meta property="article:tag" content="ajuste de curvas">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://nickapmello.github.io/portfolio/images/exercicio1.png">
+  
+    <link rel="alternate" href="/portfolio/atom.xml" title="Portfolio Calculo Numerico" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/portfolio/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/portfolio/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/portfolio/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/portfolio/" id="logo">Portfolio Calculo Numerico</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/portfolio/" id="subtitle">Métodos numéricos para ajuste de curvas</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/portfolio/">Home</a>
+        
+          <a class="main-nav-link" href="/portfolio/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/portfolio/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Suche"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://nickapmello.github.io/portfolio"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Lista" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/portfolio/2024/06/15/Lista/" class="article-date">
+  <time class="dt-published" datetime="2024-06-15T03:00:00.000Z" itemprop="datePublished">2024-06-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Lista
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="Introducao-a-Lista"><a href="#Introducao-a-Lista" class="headerlink" title="Introdução a Lista"></a>Introdução a Lista</h2><p>Na seguinte lista de exercícios, foi proposta a ideia de utilizar os códigos que desenvolvemos em aula para apresentar a solução dos três seguintes exercícios de interpolação. Para cada exercício, deve ser utilizado os métodos de interpolação de Newton e Lagrange. Printando o código demostrando a resposta calculada.</p>
+<h2 id="Exibicao-de-codigos-desenvolvidos"><a href="#Exibicao-de-codigos-desenvolvidos" class="headerlink" title="Exibição de códigos desenvolvidos"></a>Exibição de códigos desenvolvidos</h2><h3 id="Metodo-de-Newton-Ajustei-para-pedir-quantidade-e-valor-dos-pontos"><a href="#Metodo-de-Newton-Ajustei-para-pedir-quantidade-e-valor-dos-pontos" class="headerlink" title="Método de Newton (Ajustei para pedir quantidade e valor dos pontos)"></a>Método de Newton (Ajustei para pedir quantidade e valor dos pontos)</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">calc</span>(<span class="params">x, y</span>):</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(y) == <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> y[<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> (calc(x[<span class="number">1</span>:], y[<span class="number">1</span>:]) - calc(x[:-<span class="number">1</span>], y[:-<span class="number">1</span>])) / (x[-<span class="number">1</span>] - x[<span class="number">0</span>])</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">polinomio</span>(<span class="params">x, y</span>):</span><br><span class="line">    n = <span class="built_in">len</span>(x)</span><br><span class="line">    coeficientes = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        coeficientes.append(calc(x[:i + <span class="number">1</span>], y[:i + <span class="number">1</span>]))</span><br><span class="line">    <span class="keyword">return</span> coeficientes</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">calc_polinomio</span>(<span class="params">coeficientes, x, valor</span>):</span><br><span class="line">    n = <span class="built_in">len</span>(coeficientes)</span><br><span class="line">    resultado = coeficientes[<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, n):</span><br><span class="line">        termo = coeficientes[i]</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(i):</span><br><span class="line">            termo *= (valor - x[j])</span><br><span class="line">        resultado += termo</span><br><span class="line">    <span class="keyword">return</span> resultado</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">interpolacao</span>(<span class="params">x, y, valor</span>):</span><br><span class="line">    coeficientes = polinomio(x, y)</span><br><span class="line">    <span class="keyword">return</span> calc_polinomio(coeficientes, x, valor)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">solicitar_pontos</span>():</span><br><span class="line">    quantidade_de_pontos = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;Quantos pontos você deseja inserir? &quot;</span>))</span><br><span class="line">    pontos_x = []</span><br><span class="line">    pontos_y = []</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(quantidade_de_pontos):</span><br><span class="line">        x = <span class="built_in">float</span>(<span class="built_in">input</span>(<span class="string">f&quot;Digite o valor de x_<span class="subst">&#123;i&#125;</span>: &quot;</span>))</span><br><span class="line">        y = <span class="built_in">float</span>(<span class="built_in">input</span>(<span class="string">f&quot;Digite o valor de f(x_<span class="subst">&#123;i&#125;</span>): &quot;</span>))</span><br><span class="line">        pontos_x.append(x)</span><br><span class="line">        pontos_y.append(y)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> pontos_x, pontos_y</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">valor_final</span>():</span><br><span class="line">    pontos_x, pontos_y = solicitar_pontos()</span><br><span class="line">    x_interpolar = <span class="built_in">float</span>(<span class="built_in">input</span>(<span class="string">&quot;Digite o valor de x para interpolação: &quot;</span>))</span><br><span class="line">    resultado = interpolacao(pontos_x, pontos_y, x_interpolar)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;O valor interpolado em x = <span class="subst">&#123;x_interpolar&#125;</span> é <span class="subst">&#123;resultado:<span class="number">.4</span>f&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__valor_final__&quot;</span>:</span><br><span class="line">    valor_final()</span><br></pre></td></tr></table></figure>
+
+<h3 id="Metodo-de-Lagrange"><a href="#Metodo-de-Lagrange" class="headerlink" title="Método de Lagrange"></a>Método de Lagrange</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">calc_polinomio</span>(<span class="params">pontos_x, i, x_interpolar</span>):</span><br><span class="line">    polinomio_basico = <span class="number">1</span></span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(pontos_x)):</span><br><span class="line">        <span class="keyword">if</span> i != j:</span><br><span class="line">            polinomio_basico *= (x_interpolar - pontos_x[j]) / (pontos_x[i] - pontos_x[j])</span><br><span class="line">    <span class="keyword">return</span> polinomio_basico</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">calc_poli_lagrange</span>(<span class="params">pontos_x, pontos_y, x_interpolar</span>):</span><br><span class="line">    resultado_interpolado = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(pontos_x)):</span><br><span class="line">        L_i = calc_polinomio(pontos_x, i, x_interpolar)</span><br><span class="line">        resultado_interpolado += pontos_y[i] * L_i</span><br><span class="line">    <span class="keyword">return</span> resultado_interpolado</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">solicitar_pontos</span>():</span><br><span class="line">    quantidade_de_pontos = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;Quantos pontos você deseja inserir? &quot;</span>))</span><br><span class="line">    pontos_x = []</span><br><span class="line">    pontos_y = []</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(quantidade_de_pontos):</span><br><span class="line">        x = <span class="built_in">float</span>(<span class="built_in">input</span>(<span class="string">f&quot;Digite o valor de x_<span class="subst">&#123;i&#125;</span>: &quot;</span>))</span><br><span class="line">        y = <span class="built_in">float</span>(<span class="built_in">input</span>(<span class="string">f&quot;Digite o valor de f(x_<span class="subst">&#123;i&#125;</span>): &quot;</span>))</span><br><span class="line">        pontos_x.append(x)</span><br><span class="line">        pontos_y.append(y)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> pontos_x, pontos_y</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">valor_final</span>():</span><br><span class="line">    pontos_x, pontos_y = solicitar_pontos()</span><br><span class="line">    x_interpolar = <span class="built_in">float</span>(<span class="built_in">input</span>(<span class="string">&quot;Digite o valor de x para interpolação: &quot;</span>))</span><br><span class="line">    resultado = calc_poli_lagrange(pontos_x, pontos_y, x_interpolar)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;O valor interpolado em x = <span class="subst">&#123;x_interpolar&#125;</span> é <span class="subst">&#123;resultado&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__valor_final__&quot;</span>:</span><br><span class="line">    valor_final()</span><br></pre></td></tr></table></figure>
+
+<h3 id="Exercicio-1"><a href="#Exercicio-1" class="headerlink" title="Exercício 1"></a>Exercício 1</h3><p><img src="/portfolio/images/exercicio1.png"></p>
+<p>Solução com método de Newton:<br><img src="/portfolio/images/print1-newton.png"></p>
+<p>Solução com método de Lagrange:<br><img src="/portfolio/images/print1-lagrange.png"></p>
+<h3 id="Exercicio-2"><a href="#Exercicio-2" class="headerlink" title="Exercício 2"></a>Exercício 2</h3><p><img src="/portfolio/images/exercicio2.png"></p>
+<p>Solução com método de Newton:<br><img src="/portfolio/images/print2-newton.png"></p>
+<p>Solução com método de Lagrange:<br><img src="/portfolio/images/print2-lagrange.png"></p>
+<h3 id="Exercicio-3"><a href="#Exercicio-3" class="headerlink" title="Exercício 3"></a>Exercício 3</h3><p><img src="/portfolio/images/exercicio3.png"></p>
+<p>Solução com método de Newton:<br><img src="/portfolio/images/print3-newton.png"></p>
+<p>Solução com método de Lagrange:<br><img src="/portfolio/images/print3-lagrange.png"></p>
+<h3 id="Conclusao"><a href="#Conclusao" class="headerlink" title="Conclusão"></a>Conclusão</h3><p>Os resultados para o exercício 1 são exatamente iguais. Para o exercício 2 são praticamente iguais, com uma pequena diferença decimal  de 1820.234375 para 1820.2344. Para o exercício 3 são também praticamente iguais, com uma pequena diferença decimal de  2.5096001157625 para 2.5096. Portanto, é correto dizer que com os testes realizados nessa atividade, ambos os métodos de Newton e Lagrange são eficazes para realizar a interpolação de polinômios, produzindo resultados consistentes.</p>
+<p>Para mais informações, este é o meu GitHub com os dados corretos:<br><a target="_blank" rel="noopener" href="https://github.com/nickapmello/PortfolioCN">GitHub Nicolas Mello - Portfólio Calculo Numerico</a>.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://nickapmello.github.io/portfolio/2024/06/15/Lista/" data-id="clxfqoigr00038kz8hm8a7cd9" data-title="Lista" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/portfolio/tags/Lagrange/" rel="tag">Lagrange</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/portfolio/tags/Newton/" rel="tag">Newton</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/portfolio/tags/ajuste-de-curvas/" rel="tag">ajuste de curvas</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/portfolio/tags/interpolacao/" rel="tag">interpolação</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/portfolio/2024/06/03/Aula-Pratica-3/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">Aula Prática 3</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/portfolio/tags/Lagrange/" rel="tag">Lagrange</a></li><li class="tag-list-item"><a class="tag-list-link" href="/portfolio/tags/Newton/" rel="tag">Newton</a></li><li class="tag-list-item"><a class="tag-list-link" href="/portfolio/tags/ajuste-de-curvas/" rel="tag">ajuste de curvas</a></li><li class="tag-list-item"><a class="tag-list-link" href="/portfolio/tags/interpolacao/" rel="tag">interpolação</a></li><li class="tag-list-item"><a class="tag-list-link" href="/portfolio/tags/lagrange/" rel="tag">lagrange</a></li><li class="tag-list-item"><a class="tag-list-link" href="/portfolio/tags/matematica/" rel="tag">matemática</a></li><li class="tag-list-item"><a class="tag-list-link" href="/portfolio/tags/metodos-numericos/" rel="tag">métodos numéricos</a></li><li class="tag-list-item"><a class="tag-list-link" href="/portfolio/tags/newton/" rel="tag">newton</a></li><li class="tag-list-item"><a class="tag-list-link" href="/portfolio/tags/polinomios/" rel="tag">polinômios</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/portfolio/tags/Lagrange/" style="font-size: 10px;">Lagrange</a> <a href="/portfolio/tags/Newton/" style="font-size: 10px;">Newton</a> <a href="/portfolio/tags/ajuste-de-curvas/" style="font-size: 10px;">ajuste de curvas</a> <a href="/portfolio/tags/interpolacao/" style="font-size: 20px;">interpolação</a> <a href="/portfolio/tags/lagrange/" style="font-size: 10px;">lagrange</a> <a href="/portfolio/tags/matematica/" style="font-size: 15px;">matemática</a> <a href="/portfolio/tags/metodos-numericos/" style="font-size: 15px;">métodos numéricos</a> <a href="/portfolio/tags/newton/" style="font-size: 10px;">newton</a> <a href="/portfolio/tags/polinomios/" style="font-size: 15px;">polinômios</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/portfolio/archives/2024/06/">junho 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/portfolio/archives/2024/05/">maio 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">letzter Beitrag</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/portfolio/2024/06/15/Lista/">Lista</a>
+          </li>
+        
+          <li>
+            <a href="/portfolio/2024/06/03/Aula-Pratica-3/">Aula Prática 3</a>
+          </li>
+        
+          <li>
+            <a href="/portfolio/2024/06/01/Aula-Pratica-2/">Aula Prática 2</a>
+          </li>
+        
+          <li>
+            <a href="/portfolio/2024/05/29/Aula-Pratica-1/">Aula Prática 1</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 Nicolas Mello<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/portfolio/" class="mobile-nav-link">Home</a>
+  
+    <a href="/portfolio/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/portfolio/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/portfolio/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/portfolio/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
