@@ -100,4 +100,4 @@ A função 'main' finaliza o código, onde ela chama a função 'solicitar_ponto
 
 
 Para mais informações, este é o meu GitHub com os dados corretos:
-[GitHub Nicolas Mello - Portfólio Calculo Numerico](https://github.com/nickapmello/portfolio).
+[GitHub - Portfólio Calculo Numerico](https://github.com/nickapmello/portfolio).

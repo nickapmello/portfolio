@@ -103,4 +103,4 @@ Este é o final do código, onde são listados 5 específicos valores para os po
 
 
 Para mais informações, este é o meu GitHub com os dados corretos:
-[GitHub Nicolas Mello - Portfólio Calculo Numerico](https://github.com/nickapmello/portfolio).
+[GitHub - Portfólio Calculo Numerico](https://github.com/nickapmello/portfolio).
